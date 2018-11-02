@@ -61,7 +61,11 @@ Pizza.prototype.toString = function() {
     }
     output += (this.toppingList)[i];
     if(i != (this.toppingList).length - 1) {
-      output += ", ";
+      if((this.toppingList).length === 2) {
+        output += " ";
+      } else {
+        output += ", ";
+      }
     }
   }
   output += ". Your total today will be $";
