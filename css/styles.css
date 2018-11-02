@@ -24,3 +24,7 @@ p {
   font-size: 12pt;
   font-family: cursive;
 }
+
+#back {
+  display: none;
+}

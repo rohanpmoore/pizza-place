@@ -84,5 +84,11 @@ $(document).ready(function() {
     })
     $("#pizzaOutput").text(myPizza.toString());
     $("#pizzaForm").hide();
+    $("#back").show();
+  });
+  $("#back").click(function() {
+    $("#pizzaOutput").text("");
+    $("#pizzaForm").show();
+    $("#back").hide();
   })
 });
