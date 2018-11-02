@@ -12,4 +12,14 @@ select {
 
 label {
   display: block;
+  text-shadow: 2px 2px white;
+}
+
+h1 {
+  text-shadow: 2px 2px white;
+}
+
+p {
+  font-size: 12pt;
+  font-family: cursive;
 }
