@@ -25,6 +25,10 @@ p {
   font-family: cursive;
 }
 
+button {
+  font-size: 11pt;
+}
+
 #back {
   display: none;
 }
