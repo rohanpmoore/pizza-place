@@ -68,3 +68,17 @@ Pizza.prototype.toString = function() {
   output += (this.cost).toString();
   return output;
 }
+
+$(document).ready(function() {
+  $("#pizzaForm").submit(function(event) {
+    event.preventDefault();
+    var size = $("#size").val();
+    var myPizza = new Pizza(size);
+    $("input:checkbox[name=toppings]:checked").each(function() {
+      var topping = $(this).val();
+      myPizza.addTopping(topping);
+    })
+    $("#pizzaOutput").text(myPizza.toString());
+    $("#pizzaForm").hide();
+  })
+});
